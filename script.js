@@ -35,24 +35,24 @@ window.addEventListener("load", function() {
 
       if (isNaN(fuelLevelInput)) {
          alert("Please enter a valid number for fuel level.");
-         faultyItems.style.visibility = "hidden";
+         document.getElementById(faultyItems).style.visibility = "hidden";
       };
 
       if (isNaN(cargoMassInput)) {
          alert("Please enter a valid number for the cargo mass.")
-         faultyItems.style.visibility = "hidden";
+         document.getElementById(faultyItems).style.visibility = "hidden";
       }
 
       if (isNaN(pilotNameInput) === false) {
          alert("Pilot's name must only include English letters.")
-         faultyItems.style.visibility = "hidden";
+         document.getElementById(faultyItems).style.visibility = "hidden";
       } else {
          pilotStatus.innerHTML = `${pilotName.value} is our pilot today.`;
       }
       
       if (isNaN(copilotNameInput) === false) {
          alert("Co-Pilot's name must only include English letters.");
-         faultyItems.style.visibility = "hidden";
+         document.getElementById(faultyItems).style.visibility = "hidden";
       } else {
          copilotStatus.innerHTML = `${copilotName.value} is our co-pilot today.`;
       }
